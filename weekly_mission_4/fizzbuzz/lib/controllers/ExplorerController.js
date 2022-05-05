@@ -1,8 +1,6 @@
-const ExplorerService = require('../services/ExplorerService');
-
-ExplorerService = require('../services/ExplorerService');
-FizzbuzzService = require('../services/FizzbuzzService');
-Reader = require('../lib/Reader');
+const ExplorerService = require("../services/ExplorerService");
+const FizzbuzzService = require("../services/FizzbuzzService");
+const Reader = require("../utils/Reader");
 
 class ExplorerController {
 
