@@ -19,6 +19,11 @@ class ExplorerController {
         return ExplorerService.getAmountOfExplorersByMission(explorers, mission);
     }
     
+    static FizzbuzzServiceInNumber(score){
+        return FizzbuzzService.applyValidationInNumber(score);
+    }
+
+
 };
 
 

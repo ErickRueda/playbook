@@ -32,3 +32,9 @@ app.get("/v1/explorers/usernames/:mission", (request, response) => {
     const usernamesByMision = ExplorerController.getExplorersUsernamesByMission(usernames);
     response.json({mission:request.params.mission, explorers: usernamesByMision});
 })
+
+app.get("/v1/fizzbuzz/:score", (request, response) => {
+    const score = parseInt(request.params.score);
+    const trick = ExplorerController.FizzbuzzServiceInNumber(score);
+    response.json({score: score, trick: trick});
+})
