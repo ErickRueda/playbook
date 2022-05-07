@@ -38,3 +38,11 @@ app.get("/v1/fizzbuzz/:score", (request, response) => {
     const trick = ExplorerController.FizzbuzzServiceInNumber(score);
     response.json({score: score, trick: trick});
 })
+
+app.get("/v1/explorers/stack/:stack",(request, response)=>{
+    const stack = request.params.stack;
+    const ExplorersByStack= ExplorerController.getExplorersbyStack(stack);
+    response.json(ExplorersByStack);
+})
+
+

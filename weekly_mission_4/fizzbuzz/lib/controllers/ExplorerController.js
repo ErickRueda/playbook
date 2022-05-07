@@ -23,6 +23,11 @@ class ExplorerController {
         return FizzbuzzService.applyValidationInNumber(score);
     }
 
+    static getExplorersbyStack(stack){
+        const explorers =Reader.readJsonFile("explorers.json")
+        return ExplorerService.getExplorersByStack(explorers,stack)
+    }
+
 
 };
 
